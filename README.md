@@ -3,11 +3,13 @@
 web/null is `/dev/null` for the Web. It silently agrees with and eats up any request
 being `VERB`d to it, and keeps statistics of it.  
 
-web/null is great to use as an end-socket of any distributed system you
-have. Replace any service with it, in order to have a real peek at what
+web/null is great to use as a diagnostics end-socket of any distributed system you
+have, that works against another system sitting at an HTTP endpoint.  
+
+Replace any service with it, in order to have a real peek at what
 your other services are doing.  
 
-web/null is extremely useful (and being used) for getting data during stress
+web/null is extremely useful (and being used) for getting stats data during stress
 testing a complex system.  
 
 ## Quick Start
@@ -42,7 +44,7 @@ Here's how help looks like:
       -c, --canned-response [file]  Existing file name to read a response from.
       -o, --output [file]           File name to output to.
       -i, --interval [seconds]      Flush interval.
-      -p, --port [number]           Flush interval.
+      -p, --port [number]           Port to listen on.
 
 ## Contributing
 

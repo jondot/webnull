@@ -5,7 +5,7 @@
   sys = require('sys');
   program = require('commander');
   version = '0.0.1';
-  program.version(version).option('-d, --debug', 'Show when flush happens.', false).option('-c, --canned-response [file]', 'Existing file name to read a response from.').option('-o, --output [file]', 'File name to output to.', 'webnull.log').option('-i, --interval [seconds]', 'Flush interval.', 10).option('-p, --port [number]', 'Flush interval.', 4000).parse(process.argv);
+  program.version(version).option('-d, --debug', 'Show when flush happens.', false).option('-c, --canned-response [file]', 'Existing file name to read a response from.').option('-o, --output [file]', 'File name to output to.', 'webnull.log').option('-i, --interval [seconds]', 'Flush interval.', 10).option('-p, --port [number]', 'Port to listen on.', 4000).parse(process.argv);
   console.log("== web/null v" + version + ". I eat your HTTP. ==");
   if (program.debug != null) {
     console.log("* Running in debug mode.");
