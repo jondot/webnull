@@ -1,0 +1,8 @@
+{
+  "name": "webnull",
+  "version": "0.0.1",
+  "dependencies": {
+    "connect": ">=1.0.0",
+    "commander": ">=0.3.2"
+  }
+}
