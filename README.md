@@ -29,6 +29,18 @@ And now just experiment. Here is apachebench
 
     $ ab -n 10000 -c 10 "http://localhost:4000/"
 
+Sample output, human-readable (debug)
+
+    ...
+    127.0.0.1 - - [Wed, 09 Nov 2011 13:35:36 GMT] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/14.0.835.202 Safari/535.1"
+    127.0.0.1 - - [Wed, 09 Nov 2011 13:35:36 GMT] "GET /favicon.ico HTTP/1.1" 200 - "-" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/14.0.835.202 Safari/535.1"
+    1320845743    51 req(total)	0 bytes(total)	51 reqs	0 bytes	5.1 req(s)	0 bytes(avg)
+
+Sample output, CSV (webnull.log)
+
+    ...
+    1320845743,51,0,51,0,5.1,0
+
 ## Doing more
 
 Here's how help looks like:
