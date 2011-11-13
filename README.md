@@ -14,16 +14,30 @@ testing a complex system.
 
 ## Quick Start
 
-clone this repository and run
+via `npm`. It is preferrable (but not must) to run globally (sudo, -g)
+
+    $ sudo npm install webnull -g
+    $ webnull
+    == web/null v0.0.4. I eat your HTTP. ==
+    * Listening on port 4000.
+    * Flushing to webnull.log every 10 seconds.
+
+
+## Via Cloning
+
+Alternatively, if you'd like to clone / run and tweak, clone this repository and run
 
     $ npm install
 
 You should then be able to run
 
     $ node webnull
-    == web/null v0.0.1. I eat your HTTP. ==
+    == web/null v0.0.4. I eat your HTTP. ==
     * Listening on port 4000.
     * Flushing to webnull.log every 10 seconds.
+
+
+## Output
 
 And now just experiment. Here is apachebench
 
