@@ -1,9 +1,11 @@
+#!/usr/bin/env coffee
+
 connect = require 'connect'
 fs = require 'fs'
 sys = require 'sys'
 program = require 'commander'
 
-version = '0.0.1'
+version = '0.0.4'
 program
   .version(version)
   .option('-d, --debug', 'Show when flush happens.', false)

@@ -1,6 +1,11 @@
 {
   "name": "webnull",
-  "version": "0.0.1",
+  "version": "0.0.4",
+  "author" : "Dotan Nahum",
+  "description" : "web/null eats your HTTP. a useful tool to assist with stress, performance and experiment testing.",
+  "homepage" : "https://github.com/jondot/webnull",
+  "preferGlobal" : true,
+  "bin":{ "webnull" : "webnull.js" },
   "dependencies": {
     "connect": ">=1.0.0",
     "commander": ">=0.3.2"
